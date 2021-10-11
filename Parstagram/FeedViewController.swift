@@ -30,10 +30,11 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        numberOfLoad = 5
+        numberOfLoad = 20
         let query = PFQuery(className: "Posts")
         query.includeKey("author")
         query.limit = numberOfLoad
+        query.order(byDescending: "createdAt")
         query.findObjectsInBackground{ (posts, error) in
             if posts != nil {
                 self.posts = posts!
@@ -47,6 +48,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let query = PFQuery(className: "Posts")
         query.includeKey("author")
         query.limit = numberOfLoad
+        query.order(byDescending: "createdAt")
         query.findObjectsInBackground{ (posts, error) in
             if posts != nil {
                 self.posts = posts!
