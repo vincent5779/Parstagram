@@ -16,6 +16,8 @@
 		F17962652712213300972318 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F17962632712213300972318 /* LaunchScreen.storyboard */; };
 		F179626D2712261C00972318 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179626C2712261C00972318 /* LoginViewController.swift */; };
 		F179626F2712264700972318 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179626E2712264700972318 /* FeedViewController.swift */; };
+		F1797548271B560C000CE218 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1797547271B560C000CE218 /* ProfileViewController.swift */; };
+		F179754A271B5C35000CE218 /* ProfileUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1797549271B5C35000CE218 /* ProfileUploadViewController.swift */; };
 		F1BA596D271353C10071C70B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BA596C271353C10071C70B /* CameraViewController.swift */; };
 		F1BA596F27135B480071C70B /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BA596E27135B480071C70B /* PostCell.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +36,8 @@
 		F17962662712213300972318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F179626C2712261C00972318 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F179626E2712264700972318 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		F1797547271B560C000CE218 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F1797549271B5C35000CE218 /* ProfileUploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUploadViewController.swift; sourceTree = "<group>"; };
 		F1BA596C271353C10071C70B /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		F1BA596E27135B480071C70B /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +103,8 @@
 				F1BA596C271353C10071C70B /* CameraViewController.swift */,
 				F1BA596E27135B480071C70B /* PostCell.swift */,
 				F15B41DC27178EEB00B37A93 /* CommentCell.swift */,
+				F1797547271B560C000CE218 /* ProfileViewController.swift */,
+				F1797549271B5C35000CE218 /* ProfileUploadViewController.swift */,
 			);
 			path = Parstagram;
 			sourceTree = "<group>";
@@ -224,7 +230,9 @@
 				F179626F2712264700972318 /* FeedViewController.swift in Sources */,
 				F179625B2712213000972318 /* SceneDelegate.swift in Sources */,
 				F1BA596F27135B480071C70B /* PostCell.swift in Sources */,
+				F1797548271B560C000CE218 /* ProfileViewController.swift in Sources */,
 				F15B41DD27178EEB00B37A93 /* CommentCell.swift in Sources */,
+				F179754A271B5C35000CE218 /* ProfileUploadViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

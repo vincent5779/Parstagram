@@ -73,12 +73,12 @@
                     <connections>
                         <outlet property="passwordField" destination="3iJ-rq-CUn" id="JWc-DH-83D"/>
                         <outlet property="usernameField" destination="UzY-Ue-fkl" id="0mv-iR-i6B"/>
-                        <segue destination="FKL-VF-5Jo" kind="presentation" identifier="loginSegue" modalPresentationStyle="fullScreen" id="5Qf-hB-SvW"/>
+                        <segue destination="oCT-x4-QMe" kind="presentation" identifier="loginSegue" modalPresentationStyle="fullScreen" id="5Qf-hB-SvW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="115.7608695652174"/>
+            <point key="canvasLocation" x="157" y="510"/>
         </scene>
         <!--Feed View Controller-->
         <scene sceneID="YbA-b6-kZF">
@@ -219,7 +219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AI2-v4-Ts7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1650.7246376811595" y="115.17857142857142"/>
+            <point key="canvasLocation" x="2560.8695652173915" y="115.17857142857142"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="mzl-9T-5ng">
@@ -277,12 +277,13 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2411.594202898551" y="115.7608695652174"/>
+            <point key="canvasLocation" x="3321.739130434783" y="115.17857142857142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="g6O-76-eXl">
             <objects>
                 <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="FKL-VF-5Jo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="feed_tab" id="HOK-2h-jJn"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="J06-6P-2TJ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -295,13 +296,155 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d0Q-pL-BBP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="879.71014492753625" y="115.7608695652174"/>
+            <point key="canvasLocation" x="1789.8550724637682" y="115.17857142857142"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="eGH-Fb-BM3">
+            <objects>
+                <viewController id="Gns-w8-Mpw" customClass="ProfileViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R61-aU-VwB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4tj-Le-IXU">
+                                <rect key="frame" x="142" y="88.5" width="130" height="129"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="EU6-Qs-xyQ"/>
+                                    <constraint firstAttribute="height" constant="130" id="mFQ-9m-uDI"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ji9-QQ-M4r" appends="YES" id="rvD-rF-srS"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOO-9M-WAw">
+                                <rect key="frame" x="164" y="226" width="86" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="p6p-2P-I2V"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4tj-Le-IXU" firstAttribute="top" secondItem="p6p-2P-I2V" secondAttribute="top" id="0m1-xY-8Kq"/>
+                            <constraint firstItem="4tj-Le-IXU" firstAttribute="centerX" secondItem="R61-aU-VwB" secondAttribute="centerX" id="AXF-UE-wI4"/>
+                            <constraint firstItem="sOO-9M-WAw" firstAttribute="top" secondItem="4tj-Le-IXU" secondAttribute="bottom" constant="8" id="fCi-aJ-gQB"/>
+                            <constraint firstItem="sOO-9M-WAw" firstAttribute="centerX" secondItem="R61-aU-VwB" secondAttribute="centerX" id="h2c-3I-enG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="C1g-gb-2Ue"/>
+                    <connections>
+                        <outlet property="profileView" destination="4tj-Le-IXU" id="F0V-MR-0nJ"/>
+                        <outlet property="usernameLabel" destination="sOO-9M-WAw" id="ipr-qc-aYl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G8S-Kf-V7O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ji9-QQ-M4r">
+                    <connections>
+                        <action selector="onProfileEdit:" destination="Gns-w8-Mpw" id="4cc-d4-467"/>
+                        <segue destination="dvc-T6-JKi" kind="presentation" modalPresentationStyle="fullScreen" id="NnH-fO-ra0"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2560.8695652173915" y="897.99107142857133"/>
+        </scene>
+        <!--Profile Upload View Controller-->
+        <scene sceneID="cPZ-fW-aqa">
+            <objects>
+                <viewController id="dvc-T6-JKi" customClass="ProfileUploadViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ztg-Ot-WLP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aJp-Ar-6XD">
+                                <rect key="frame" x="142" y="44.5" width="130" height="129"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="B14-sl-TF2"/>
+                                    <constraint firstAttribute="height" constant="130" id="T6b-rG-Cbg"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="QxJ-5I-V3Q" appends="YES" id="1QL-8T-TX5"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPY-Gt-whF">
+                                <rect key="frame" x="172" y="201" width="70" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Submit"/>
+                                <connections>
+                                    <action selector="onSubmitProfile:" destination="dvc-T6-JKi" eventType="touchUpInside" id="zgU-KI-JVt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Ja-SA-EbB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wPY-Gt-whF" firstAttribute="top" secondItem="aJp-Ar-6XD" secondAttribute="bottom" constant="27" id="K5n-jg-kaK"/>
+                            <constraint firstItem="aJp-Ar-6XD" firstAttribute="top" secondItem="5Ja-SA-EbB" secondAttribute="top" id="MP3-vf-6c9"/>
+                            <constraint firstItem="wPY-Gt-whF" firstAttribute="centerX" secondItem="Ztg-Ot-WLP" secondAttribute="centerX" id="RaL-5v-DL0"/>
+                            <constraint firstItem="aJp-Ar-6XD" firstAttribute="centerX" secondItem="Ztg-Ot-WLP" secondAttribute="centerX" id="rRp-Ed-kM7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0TG-8t-Bn9"/>
+                    <connections>
+                        <outlet property="imagePreview" destination="aJp-Ar-6XD" id="ZUg-ET-gYq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PJV-Dq-guV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="QxJ-5I-V3Q">
+                    <connections>
+                        <action selector="onProfileButton:" destination="dvc-T6-JKi" id="gE7-tN-KDw"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3321.739130434783" y="897.99107142857133"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="hOw-rs-gD5">
+            <objects>
+                <tabBarController storyboardIdentifier="HomeTabController" automaticallyAdjustsScrollViewInsets="NO" id="oCT-x4-QMe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MO0-uK-Lx4">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="FKL-VF-5Jo" kind="relationship" relationship="viewControllers" id="XQQ-Gq-P42"/>
+                        <segue destination="F17-bU-Bny" kind="relationship" relationship="viewControllers" id="hXK-0O-m2A"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XrI-hD-0rh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1025" y="510"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fC7-0Q-Cy9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="F17-bU-Bny" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="profile_tab" id="ESE-pq-qfP"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Dg-1n-lwi">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Gns-w8-Mpw" kind="relationship" relationship="rootViewController" id="QNE-Il-r44"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RDe-H9-USJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1790" y="898"/>
         </scene>
     </scenes>
     <resources>
+        <image name="feed_tab" width="25" height="25"/>
         <image name="image_placeholder" width="375" height="375"/>
         <image name="insta_camera_btn" width="25" height="25"/>
         <image name="instagram_logo" width="255" height="108"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
+        <image name="profile_tab" width="25" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
