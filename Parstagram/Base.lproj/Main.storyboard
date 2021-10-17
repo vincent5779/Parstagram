@@ -174,14 +174,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCommentCell" id="C7c-hr-U8W">
-                                        <rect key="frame" x="0.0" y="513" width="414" height="37"/>
+                                        <rect key="frame" x="0.0" y="513" width="414" height="37.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C7c-hr-U8W" id="Ssg-1x-V9z">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="37"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="37.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a comment..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NG4-Lv-7eb">
-                                                    <rect key="frame" x="16" y="8" width="390" height="21"/>
+                                                    <rect key="frame" x="16" y="8" width="390" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -318,8 +318,8 @@
                                 </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOO-9M-WAw">
-                                <rect key="frame" x="164" y="226" width="86" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="162" y="234" width="90" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -329,7 +329,7 @@
                         <constraints>
                             <constraint firstItem="4tj-Le-IXU" firstAttribute="top" secondItem="p6p-2P-I2V" secondAttribute="top" id="0m1-xY-8Kq"/>
                             <constraint firstItem="4tj-Le-IXU" firstAttribute="centerX" secondItem="R61-aU-VwB" secondAttribute="centerX" id="AXF-UE-wI4"/>
-                            <constraint firstItem="sOO-9M-WAw" firstAttribute="top" secondItem="4tj-Le-IXU" secondAttribute="bottom" constant="8" id="fCi-aJ-gQB"/>
+                            <constraint firstItem="sOO-9M-WAw" firstAttribute="top" secondItem="4tj-Le-IXU" secondAttribute="bottom" constant="16" id="fCi-aJ-gQB"/>
                             <constraint firstItem="sOO-9M-WAw" firstAttribute="centerX" secondItem="R61-aU-VwB" secondAttribute="centerX" id="h2c-3I-enG"/>
                         </constraints>
                     </view>
@@ -342,7 +342,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G8S-Kf-V7O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="ji9-QQ-M4r">
                     <connections>
-                        <action selector="onProfileEdit:" destination="Gns-w8-Mpw" id="4cc-d4-467"/>
                         <segue destination="dvc-T6-JKi" kind="presentation" modalPresentationStyle="fullScreen" id="NnH-fO-ra0"/>
                     </connections>
                 </tapGestureRecognizer>
@@ -358,7 +357,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aJp-Ar-6XD">
-                                <rect key="frame" x="142" y="44.5" width="130" height="129"/>
+                                <rect key="frame" x="142" y="84.5" width="130" height="129"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="B14-sl-TF2"/>
@@ -369,7 +368,7 @@
                                 </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPY-Gt-whF">
-                                <rect key="frame" x="172" y="201" width="70" height="31"/>
+                                <rect key="frame" x="172" y="241" width="70" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Submit"/>
                                 <connections>
@@ -381,7 +380,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="wPY-Gt-whF" firstAttribute="top" secondItem="aJp-Ar-6XD" secondAttribute="bottom" constant="27" id="K5n-jg-kaK"/>
-                            <constraint firstItem="aJp-Ar-6XD" firstAttribute="top" secondItem="5Ja-SA-EbB" secondAttribute="top" id="MP3-vf-6c9"/>
+                            <constraint firstItem="aJp-Ar-6XD" firstAttribute="top" secondItem="5Ja-SA-EbB" secondAttribute="top" constant="40" id="MP3-vf-6c9"/>
                             <constraint firstItem="wPY-Gt-whF" firstAttribute="centerX" secondItem="Ztg-Ot-WLP" secondAttribute="centerX" id="RaL-5v-DL0"/>
                             <constraint firstItem="aJp-Ar-6XD" firstAttribute="centerX" secondItem="Ztg-Ot-WLP" secondAttribute="centerX" id="rRp-Ed-kM7"/>
                         </constraints>
@@ -406,6 +405,7 @@
                 <tabBarController storyboardIdentifier="HomeTabController" automaticallyAdjustsScrollViewInsets="NO" id="oCT-x4-QMe" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MO0-uK-Lx4">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

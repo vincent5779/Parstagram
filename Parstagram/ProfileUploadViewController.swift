@@ -23,7 +23,7 @@ class ProfileUploadViewController: UIViewController, UIImagePickerControllerDele
         var query = PFQuery(className: "Profiles")
         query.whereKey("user", equalTo: PFUser.current()!)
         query.findObjectsInBackground { (profile, error) in
-            if profile![0] != nil {
+            if profile != [] {
                 let imageData = self.imagePreview.image!.pngData()
                 let file = PFFileObject(name: "profile.png", data: imageData!)
 
@@ -38,7 +38,7 @@ class ProfileUploadViewController: UIViewController, UIImagePickerControllerDele
                     }
                 }
 
-            } else if profile![0] == nil{
+            } else if profile == [] {
                 let newProfile = PFObject(className: "Profiles")
 
                 newProfile["user"] = PFUser.current()!
@@ -98,7 +98,7 @@ class ProfileUploadViewController: UIViewController, UIImagePickerControllerDele
         query.whereKey("user", equalTo: PFUser.current()!)
         query.findObjectsInBackground { (profile, error) in
             if profile != nil {
-                if profile![0] != nil {
+                if profile != [] {
                     let profileImg = profile![0]
                     
                     let imageFile = profileImg["profile"] as! PFFileObject
